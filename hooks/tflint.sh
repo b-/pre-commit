@@ -44,5 +44,5 @@ tflint "${ARGS[@]}" --init
 
 for file in "${FILES[@]}"
 do
-  tflint "${ARGS[@]}" --chdir "$(dirname "$file")" --filter "$(basename "$file")"
+  tflint "${ARGS[@]}" --chdir "$(dirname "$file")" --filter "$(basename "$file")" --fix
 done
